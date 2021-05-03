@@ -3,61 +3,396 @@
     <title>tenancy agreement page</title>
     <link href="styles.css" rel="stylesheet">
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+  </script>
   </head>
 <body>
-<header>
-        <img src="./logo.jpg" alt="logo" width="100" height="100" />
-        <h1>01695 570 222 </h1>
-        <h1> Ormskirk Lettings</h1>
-        <section class="container">
-          <form style="display: inline" action="index.html" method="get">
-            <button class="button">Home</button>
-          </form>
-          <form style="display: inline" action="properties.html" method="get">
-            <button class="button">Properties</button>
-          </form>
-          <form style="display: inline" action="landlords.html" method="get">
-            <button class="button">Landlords</button>
-          </form>
-          <form style="display: inline" action="tenants.html" method="get">
-            <button class="button">Tenants</button>
-          </form>
-          <form style="display: inline" action="contact-us.html" method="get">
-            <button class="button">Contact Us</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Tenancy Agreement</button>
-          </form>
-          <form style="display: inline" action="login.html" method="get">
-            <button class="button1">Login</button>
-          </form>
-        </section>
-</header>
+  <header> <!--header area contains elements at the top of the page -->
+          <img src="./logo.jpg" alt="logo" width="100" height="100" /> <!--set an images src, height and width -->
+          <h1>01695 570 222 </h1> <!--setting main headings for the page -->
+          <h1> Ormskirk Lettings</h1>
+          <section class="container"> <!--this area creates the buttons and links them to the other pages -->
+            <form style="display: inline" action="index.html" method="get"> <!--use a form to get the page the buttons should link to -->
+              <button class="button">Home</button> <!--gives the button a class name so that ot can be changed  with css-->
+            </form>
+            <form style="display: inline" action="properties.html" method="get">
+              <button class="button">Properties</button> <!--this button goes to the properties page -->
+            </form>
+            <form style="display: inline" action="landlords.html" method="get">
+              <button class="button">Landlords</button> <!--this button goes to the landlords page -->
+            </form>
+            <form style="display: inline" action="tenants.html" method="get">
+              <button class="button">Tenants</button> <!--this button goes to the tenants page -->
+            </form>
+            <form style="display: inline" action="contact-us.html" method="get">
+              <button class="button">Contact Us</button> <!--this button goes to the contact us page -->
+            </form>
+            <form style="display: inline" action="tenancy.html" method="get">
+              <button class="button">Tenancy Agreement</button> <!--this button goes to the tenancy Agreement page -->
+            </form>
+            <form style="display: inline" action="login.html" method="get">
+              <button class="button1">Login</button>
+            </form>
+          </section> <!--section of buttons is over -->
+  </header>
 <h2>tenancy Agreement </h2>
-      <main>
-        <section class="propertysearch">
-          <h2>Property search</h2>
-          <form>
-            <label for="area">Area:</label><br>
-              <select id="area" name="area">
-              <option value="any_area">Any Area</option>
-              <option value="aughton">Aughton</option>
-              <option value="bickerstaffe">Bickerstaffe</option>
-              <option value="burscough">Burscough</option>
-              <option value="formby">Formby</option>
-              <option value="halsall">Halsall</option>
-              <option value="latham">Latham</option>
-              <option value="lydiate">Lydiate</option>
-              <option value="mughull">Mughull</option>
-              <option value="old_skelmersdale">Old Skelmersdale</option>
-              <option value="ormskirk">Ormskirk</option>
-              <option value="scarisbrick">Scarisbrick</option>
-              <option value="skelmersdale">Skelmersdale</option>
-              <option value="southport">Southport</option>
-              <option value="westhead">Westhead</option>
-            </select><br>
-          <label for="bedrooms">Bedrooms:</label><br>
-            <select id="bedrooms" name="bedrooms">
+<main> <!--main content goes here -->
+  <section class="propertysearch"> <!--this section has a form which users can fill in -->
+    <h2>Property search</h2>
+    <form> <!--this form is used for the property search which asks users to select an area, no. of bedrooms and tenant type -->
+      <label for="area">Area:</label><br> <!--the first form section, labelled area so users know what it is -->
+        <select id="area" name="area">
+        <option value="any_area">Any Area</option> <!--the option part is all the different choices the user has to pick from -->
+        <option value="aughton">Aughton</option>
+        <option value="bickerstaffe">Bickerstaffe</option>
+        <option value="burscough">Burscough</option>
+        <option value="formby">Formby</option>
+        <option value="halsall">Halsall</option>
+        <option value="latham">Latham</option>
+        <option value="lydiate">Lydiate</option>
+        <option value="mughull">Mughull</option>
+        <option value="old_skelmersdale">Old Skelmersdale</option>
+        <option value="ormskirk">Ormskirk</option>
+        <option value="scarisbrick">Scarisbrick</option>
+        <option value="skelmersdale">Skelmersdale</option>
+        <option value="southport">Southport</option>
+        <option value="westhead">Westhead</option>
+      </select><br> <!--the br value gives a line break so that the form is not clumped together -->
+    <label for="bedrooms">Bedrooms:</label><br> <!--the 2nd form section -->
+      <select id="bedrooms" name="bedrooms">
+        <option value="any">Any</option>
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+        <option value="six">6</option>
+        <option value="seven">7</option>
+        <option value="eight">8</option>
+        <option value="nine">9</option>
+        <option value="ten_more">10+</option>
+    </select>
+    <br>
+    <label for="tenant">Tenant Type:</label><br> <!--the 3rd form section -->
+      <select id="tenant" name="tenant" >
+        <option value="any">Any</option>
+        <option value="students">Students</option>
+        <option value="professional_other">Professionals & other</option>
+      </select>
+      <br>
+      <input type="submit" value="search"> <!--the user would click this button to get a result  -->
+  </form>
+  </section>
+        <section class="main-content"> <!--the main content goes here -->
+          <p>
+Welcome to the online tenancy application. If you have seen a property you wish to rent then please call us to confirm and pay the holding fee (this fee will be returned once tenancy is signed).
+Once you have done this you should enter your details here.</p>
+<div id="accordion" style=" margin:0 auto;">
+<h3>1. Status and Desired Property</h3>
+<div>
+  <form>
+  <label for="status">select status:</label><br> <!--asks the user to select their status  -->
+  <select id="status" name="status">
+  <option value="employed">Employed</option>
+  <option value="student">Student</option>
+  <option value="unemployed">Unemployed</option>
+  <option value="self_employed">Self Employed</option>
+  <option value="council">Council</option>
+  <option value="company">Company</option>
+  <option value="own_means">Own Means</option>
+  <option value="retired">Retired</option>
+</select> <br>
+<label for="desired">Desired Property:</label><br> <!--asks the user to input their desired property -->
+<p class="gray">Tell us about what property you're applying for and which team member you dealt with. If you are moving in with anyone include them here.</p>
+<input type="text" id="desired" name="desired"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>2. Your Details</h3>
+<div>
+<form>
+<label for="title">Title:</label><br> <!--asks the user to input their title -->
+<input type="text" id="title" name="title"><br>
+<label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="forename" name="forename"><br>
+<label for="middlename">Middlename:</label><br> <!--asks the user to input their middle name -->
+<input type="text" id="middlename" name="middlename"><br>
+<label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+<input type="text" id="surname" name="surname"><br>
+<label for="dateofbirth">DOB:</label><br> <!--asks the user to input their dob -->
+<input type="text" id="dateofbirth" name="dateofbirth"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>3. Your Bank Details</h3>
+<div>
+<form>
+<label for="accountname">Account Name:</label><br> <!--asks the user to input their account name -->
+<input type="text" id="accountname" name="accountname"><br>
+<label for="accountnumber">Account Number:</label><br> <!--asks the user to input their account number -->
+<input type="text" id="accountnumber" name="accountnumber"><br>
+<label for="sortcode">Sort Code:</label><br> <!--asks the user to input their sort code -->
+<input type="text" id="sortcode" name="sortcode"><br>
+<label for="bankname">Bank Name:</label><br> <!--asks the user to input their bankname -->
+<input type="text" id="bankname" name="bankname"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<input type="submit" value="Save">
+<input type="submit" value="Skip">
+</form>
+</div>
+<h3>4. Pre Tenancy Address</h3>
+<div>
+<form>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="phone">Phone Number:</label><br> <!--asks the user to input their phone number -->
+<input type="text" id="phone" name="phone"><br>
+<label for="datefrom">Date From:</label><br> <!--asks the user to input their date from -->
+<input type="text" id="datefrom" name="datefrom"><br>
+<label for="dateto">Date To:</label><br> <!--asks the user to input their date to -->
+<input type="text" id="dateto" name="dateto"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>5. Next of Kin</h3>
+<div>
+<form>
+  <p class="gray">not residing with you at the property</p>
+<label for="title">Title:</label><br> <!--asks the user to input their title -->
+<input type="text" id="title" name="title"><br>
+<label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="forename" name="forename"><br>
+<label for="middlename">Middlename:</label><br> <!--asks the user to input their middle name -->
+<input type="text" id="middlename" name="middlename"><br>
+<label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+<input type="text" id="surname" name="surname"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>6. Employer</h3>
+<div>
+<form>
+<label for="title">Title:</label><br> <!--asks the user to input their title -->
+<input type="text" id="title" name="title"><br>
+<label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="forename" name="forename"><br>
+<label for="middlename">Middlename:</label><br> <!--asks the user to input their middle name -->
+<input type="text" id="middlename" name="middlename"><br>
+<label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+<input type="text" id="surname" name="surname"><br>
+<label for="organisation">Organisation Name:</label><br> <!--asks the user to input their organisation name -->
+<input type="text" id="organisation" name="organisation"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<label for="datefrom">Date From:</label><br> <!--asks the user to input their date from -->
+<input type="text" id="datefrom" name="datefrom"><br>
+<label for="dateto">Date To:</label><br> <!--asks the user to input their date to -->
+<input type="text" id="dateto" name="dateto"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>7. Pre Tenancy Agent</h3>
+<div>
+<form>
+<p class="gray">if you don't have one then skip</p>
+<label for="organisation">Organisation Name:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="organisation" name="organisation"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<label for="datefrom">Date From:</label><br> <!--asks the user to input their date from -->
+<input type="text" id="datefrom" name="datefrom"><br>
+<label for="dateto">Date To:</label><br> <!--asks the user to input their date to -->
+<input type="text" id="dateto" name="dateto"><br>
+<input type="submit" value="Save">
+<input type="submit" value="Skip">
+</form>
+</div>
+<h3>8. Pre Tenancy Landlord</h3>
+<div>
+<form>
+<p class="gray">if you don't have one then skip</p>
+<label for="title">Title:</label><br> <!--asks the user to input their title -->
+<input type="text" id="title" name="title"><br>
+<label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="forename" name="forename"><br>
+<label for="middlename">Middlename:</label><br> <!--asks the user to input their middle name -->
+<input type="text" id="middlename" name="middlename"><br>
+<label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+<input type="text" id="surname" name="surname"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<label for="datefrom">Date From:</label><br> <!--asks the user to input their date from -->
+<input type="text" id="datefrom" name="datefrom"><br>
+<label for="dateto">Date To:</label><br> <!--asks the user to input their date to -->
+<input type="text" id="dateto" name="dateto"><br>
+<input type="submit" value="Save">
+<input type="submit" value="Skip">
+</form>
+</div>
+<h3>9. Trustee</h3>
+<div>
+<form>
+<label for="title">Title:</label><br> <!--asks the user to input their title -->
+<input type="text" id="title" name="title"><br>
+<label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="forename" name="forename"><br>
+<label for="middlename">Middlename:</label><br> <!--asks the user to input their middle name -->
+<input type="text" id="middlename" name="middlename"><br>
+<label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+<input type="text" id="surname" name="surname"><br>
+<label for="organisation">Organisation Name:</label><br> <!--asks the user to input their organisation name -->
+<input type="text" id="organisation" name="organisation"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<label for="datefrom">Date From:</label><br> <!--asks the user to input their date from -->
+<input type="text" id="datefrom" name="datefrom"><br>
+<label for="dateto">Date To:</label><br> <!--asks the user to input their date to -->
+<input type="text" id="dateto" name="dateto"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>10. Administrator</h3>
+<div>
+<form>
+<label for="title">Title:</label><br> <!--asks the user to input their title -->
+<input type="text" id="title" name="title"><br>
+<label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+<input type="text" id="forename" name="forename"><br>
+<label for="middlename">Middlename:</label><br> <!--asks the user to input their middle name -->
+<input type="text" id="middlename" name="middlename"><br>
+<label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+<input type="text" id="surname" name="surname"><br>
+<label for="organisation">Organisation Name:</label><br> <!--asks the user to input their organisation name -->
+<input type="text" id="organisation" name="organisation"><br>
+<label for="address1">Address 1:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address1" name="address1"><br>
+<label for="address2">Address 2:</label><br> <!--asks the user to input their address -->
+<input type="text" id="address2" name="address2"><br>
+<label for="postcode">Postcode:</label><br> <!--asks the user to input their postcode -->
+<input type="text" id="postcode" name="postcode"><br>
+<label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+<input type="text" id="mobile" name="mobile"><br>
+<label for="email">Email:</label><br> <!--asks the user to input their email -->
+<input type="text" id="email" name="email"><br>
+<label for="datefrom">Date From:</label><br> <!--asks the user to input their date from -->
+<input type="text" id="datefrom" name="datefrom"><br>
+<label for="dateto">Date To:</label><br> <!--asks the user to input their date to -->
+<input type="text" id="dateto" name="dateto"><br>
+<input type="submit" value="Save">
+</form>
+</div>
+<h3>11. General Details</h3>
+<div>
+<form>
+<label for="residentialstatus">Residential Status:</label><br> <!--the residential status section -->
+    <select id="residentialstatus" name="residentialstatus">
+      <option value="propertyowner">Property Owner</option>
+      <option value="counciltenant">Council Tenant</option>
+      <option value="privatetenant">Private Tenant</option>
+      <option value="student">Student Halls of Residence</option>
+      <option value="friendsrelatives">Friends/Relatives</option>
+</select><br>
+<label for="court">Do you have any County Court Judgements, court decrees, bankruptcy or administration orders?</label><br> <!--asks the user to input their court info -->
+<input type="text" id="court" name="court"><br>
+<label for="salary">Gross Annual Salary:</label><br> <!--asks the user to input their salary -->
+<input type="text" id="salary" name="salary"><br>
+<label for="payroll">Payroll Reference or Department:</label><br> <!--asks the user to input their payroll-->
+<input type="text" id="payroll" name="payroll"><br>
+<label for="position">Position Held:</label><br> <!--asks the user to input their position held-->
+<input type="text" id="position" name="position"><br>
+<label for="pos"></label><br> <!--the position status section -->
+    <select id="pos" name="pos">
+      <option value="permanent">Permanent</option>
+      <option value="temp">Temporary</option>
+    </select><br>
+    <input type="checkbox" id="tick1" name="tick1" value="tick1">
+    <label for="tick1"> Tick if employment will change after the tenancy starts.</label><br> <!--tick box asking about employment -->
+    <input type="checkbox" id="tick2" name="tick2" value="tick2">
+    <label for="tick2">If you don't wish to be made aware of additional services that we or partner companies provide please tick the box </label><br> <!--tick box about signing up for addtional services -->
+<input type="submit" value="Save">
+<input type="submit" value="Finish">
+</form>
+</div>
+</section>
+          <section class="propertyalerts"> <!--this section has another form to get a property alert -->
+            <h2>Property Alerts</h2>
+            <form>
+              <label for="title">Title:</label><br> <!--asks the user to input their title -->
+              <input type="text" id="title" name="title"><br>
+              <label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
+              <input type="text" id="forename" name="forename"><br>
+              <label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
+              <input type="text" id="surname" name="surname"><br>
+              <label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
+              <input type="text" id="mobile" name="mobile"><br>
+              <label for="email">Email:</label><br> <!--asks the user to input their email -->
+              <input type="text" id="email" name="email"><br>
+              <label for="min_rent">Min Rent:</label><br> <!--asks the user to input their min rent-->
+              <input type="text" id="min_rent" name="min_rent"><br>
+              <label for="max_rent">Max Rent:</label><br> <!--asks the user to input their max rent -->
+              <input type="text" id="max_rent" name="max_rent"><br>
+              <label for="beds">Beds:</label><br> <!--asks the user to select the amount of beds theyd like in the property  -->
+              <select id="beds" name="beds">
               <option value="any">Any</option>
               <option value="one">1</option>
               <option value="two">2</option>
@@ -69,83 +404,36 @@
               <option value="eight">8</option>
               <option value="nine">9</option>
               <option value="ten_more">10+</option>
-          </select>
-          <br>
-          <label for="tenant">Tenant Type:</label><br>
-            <select id="tenant" name="tenant" >
-              <option value="any">Any</option>
-              <option value="students">Students</option>
-              <option value="professional_other">Professionals & other</option>
-            </select>
-            <br>
-            <input type="submit" value="search">
-        </form>
-        </section>
-        <section class="main-content">
-          <p>
-Welcome to the online tenancy application. If you have seen a property you wish to rent then please call us to confirm and pay the holding fee (this fee will be returned once tenancy is signed).
-Once you have done this you should enter your details here.</p>
-<p> insert link to tenancy agreement page</p>
+            </select> <br>
+            <input type="submit" value="Subscribe"> <!--this subscribe button would register their email and then send them information whenever their search criteria becomes available -->
+            </form>
           </section>
-        <section class="propertyalerts">
-          <h2>Property Alerts</h2>
-          <form>
-            <label for="title">Title:</label><br>
-            <input type="text" id="title" name="title"><br>
-            <label for="forename">Forename:</label><br>
-            <input type="text" id="forename" name="forename"><br>
-            <label for="surname">Surname:</label><br>
-            <input type="text" id="surname" name="surname"><br>
-            <label for="mobile">Mobile:</label><br>
-            <input type="text" id="mobile" name="mobile"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="min_rent">Min Rent:</label><br>
-            <input type="text" id="min_rent" name="min_rent"><br>
-            <label for="max_rent">Max Rent:</label><br>
-            <input type="text" id="max_rent" name="max_rent"><br>
-            <label for="beds">Beds:</label><br>
-            <select id="beds" name="beds">
-            <option value="any">Any</option>
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5</option>
-            <option value="six">6</option>
-            <option value="seven">7</option>
-            <option value="eight">8</option>
-            <option value="nine">9</option>
-            <option value="ten_more">10+</option>
-          </select> <br>
-          <input type="submit" value="Subscribe">
-          </form>
-        </section>
-      </main>
-      <footer>
-        <section class="footerlinks">
-            <a class="contactuspage" href="contact-us.html">Contact us</a>
-            <a href="faqspage">FAQs</a>
+        </main> <!--main section is finished -->
+        <footer> <!--this area is at the bottom of the page -->
+          <section class="footerlinks"> <!--created a section for the links of the page -->
+              <a class="contactuspage" href="contact-us.html">Contact us</a> <!--this one links to the contact us page -->
+              <a href="faqspage">FAQs</a>
+            </section>
+            <section class="socials"> <!--created a section for social media links -->
+            <p>Facebook:</p>
+            <a href="https://www.facebook.com/ormskirklettings"> <!--this is a link to the facebook page -->
+              <img
+                src="./facebook_logo.png"
+                alt="facebook_logo"
+                width="40"
+                height="40"
+              /> <!--the image of the facebook logo is used as te link to get to the page -->
+            </a>
+            <p>Twitter:</p>
+            <a href="https://www.twitter.com/ormskirksl"> <!--this is a link to the twitter page -->
+              <img
+                src="./twitter_logo.png"
+                alt="twitter_logo"
+                width="40"
+                height="40"
+              /> <!--the twitter logo is also used as the link to get to the page -->
+            </a>
           </section>
-          <section class="socials">
-          <p>Facebook:</p>
-          <a href="https://www.facebook.com/ormskirklettings">
-            <img
-              src="./facebook_logo.png"
-              alt="facebook_logo"
-              width="40"
-              height="40"
-            />
-          </a>
-          <p>Twitter:</p>
-          <a href="https://www.twitter.com/ormskirksl">
-            <img
-              src="./twitter_logo.png"
-              alt="twitter_logo"
-              width="40"
-              height="40"
-            />
-          </a>
-        </section>
-      </footer>
-</body>
+        </footer> <!--the footer is finished -->
+    </body> <!--the body area is finished -->
+    </html>

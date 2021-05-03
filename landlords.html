@@ -3,82 +3,148 @@
     <title>Landlords page</title>
     <link href="styles.css" rel="stylesheet">
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+  </script>
   </head>
 <body>
-<header>
-        <img src="./logo.jpg" alt="logo" width="100" height="100" />
-        <h1>01695 570 222 </h1>
-        <h1> Ormskirk Lettings</h1>
-        <section class="container">
-          <form style="display: inline" action="index.html" method="get">
-            <button class="button">Home</button>
-          </form>
-          <form style="display: inline" action="properties.html" method="get">
-            <button class="button">Properties</button>
-          </form>
-          <form style="display: inline" action="landlords.html" method="get">
-            <button class="button">Landlords</button>
-          </form>
-          <form style="display: inline" action="tenants.html" method="get">
-            <button class="button">Tenants</button>
-          </form>
-          <form style="display: inline" action="contact-us.html" method="get">
-            <button class="button">Contact Us</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Tenancy Agreement</button>
-          </form>
-          <form style="display: inline" action="login.html" method="get">
-            <button class="button1">Login</button>
-          </form>
-        </section>
-</header>
+  <header> <!--header area contains elements at the top of the page -->
+          <img src="./logo.jpg" alt="logo" width="100" height="100" /> <!--set an images src, height and width -->
+          <h1>01695 570 222 </h1> <!--setting main headings for the page -->
+          <h1> Ormskirk Lettings</h1>
+          <section class="container"> <!--this area creates the buttons and links them to the other pages -->
+            <form style="display: inline" action="index.html" method="get"> <!--use a form to get the page the buttons should link to -->
+              <button class="button">Home</button> <!--gives the button a class name so that ot can be changed  with css-->
+            </form>
+            <form style="display: inline" action="properties.html" method="get">
+              <button class="button">Properties</button> <!--this button goes to the properties page -->
+            </form>
+            <form style="display: inline" action="landlords.html" method="get">
+              <button class="button">Landlords</button> <!--this button goes to the landlords page -->
+            </form>
+            <form style="display: inline" action="tenants.html" method="get">
+              <button class="button">Tenants</button> <!--this button goes to the tenants page -->
+            </form>
+            <form style="display: inline" action="contact-us.html" method="get">
+              <button class="button">Contact Us</button> <!--this button goes to the contact us page -->
+            </form>
+            <form style="display: inline" action="tenancy.html" method="get">
+              <button class="button">Tenancy Agreement</button> <!--this button goes to the tenancy Agreement page -->
+            </form>
+            <form style="display: inline" action="login.html" method="get">
+              <button class="button1">Login</button>
+            </form>
+          </section> <!--section of buttons is over -->
+  </header>
 <h2>Landlord Services</h2>
       <main>
-        <section class="main-content-landlords">
+        <section class="main-content-landlords"> <!--the main content goes here -->
           <p>Ormskirk Lettings aim to be the first choice for landlords by providing a unique, unrivalled and cost effective service to help landlords let their properties quickly and efficiently and to find tenants their new homes.
 Ormskirk Lettings will advise landlords on how to maximise rental income. Click the following for more information on our outstanding services:</p>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Maximizing Rental Potential</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Fully Managed</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Fully Managed with Rent Gurantee</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Tenant Find and Let</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Holiday'caretaker'</button>
-          </form>
+        <div id="accordion" style=" margin:0 auto;">
+        <form style="display: inline" action="" method="get">
+          <button class="button">Maximizing Rental Potential</button>
+        </form> <!--these buttons should take users to different pages but there is too many pages -->
+        <div>
+          <p>We will visit your property to advise on the best use of available space in order to maximise rental income. Sometimes there are simple solutions to creating more rooms and updating existing accommodation.</p>
+          <p>To simplify the process for landlords we offer a full project management service, which includes design and Build , planning permission, decorating, furniture packs, floor covering and window dressings.</p>
+          <p>To help rent your properties quickly and efficiently, we will advertise them on our website which feeds to well known property portals, Rightmove and OnTheMarket.</p>
+          <p>We will also advise on appropriate rents and terms of tenancy as well as suitable tenant types for your properties.</p>
+        </div>
+        <form style="display: inline" action="" method="get">
+          <button class="button">Fully Managed</button>
+        </form>
+        <div>
+        <p>Sit back and relax! A fully comprehensive, top of the range service from us, we…</p>
+        <li>Advise to ensure your property meets regulations and requirements, and to maximise potential rental income. </li>
+        <li> Advertise by marketing each property via our website with feeds to Rightmove and On the Market, vibrant advertising boards, marketing literature and enthusiastic approach. </li>
+        <li>Accompany viewings of your property </li>
+        <li>Obtain a completed application form from which we will verify tenant status and confirm identity with relevant references and searches. </li>
+        <li>Tenancy agreements are then drawn up, tailor made to include any specific requirements you may have. Security deposits are collected on your behalf. </li>
+        <li>Inventory </li>
+        <li>Full rent collection with deposits held in client account. Termly account statements. </li>
+        <li>Deposits run in accordance with the 2007 tenancy deposit legislation at no extra charge to the landlord. </li>
+        <li>Arrange all required compliance certificates. </li>
+        <li>Debt control and recovery. </li>
+        <li>Managing all maintenance. We respond to calls for maintenance and repairs, obtaining estimates for larger work and overseeing repairs at your request. </li>
+        <li>Inspect your property on a regular basis upon request from you </li>
+        <li>End of tenancy inspection, arranging any repairs required. </li>
+        <li>Provision of an annual income and expenses report enabling easier completion of tax returns. </li>
+        <p>Fees: Fully managed- from £300 plus on-going management fee of 8.5% plus VAT.
+        Providing you, the landlord with an online password protected login and access to your account…giving you access at any time of the day or night, to check your rental status, maintenance details, and any invoices on your account.</p>
+        </div>
+        <form style="display: inline" action="" method="get">
+          <button class="button">Fully Managed with Rent Gurantee</button>
+        </form>
+        <div>
+          <p>Sit back and relax! A fully comprehensive, top of the range service from us, we…</p>
+          <li>Advise to ensure your property meets regulations and requirements, and to maximise potential rental income. </li>
+          <li> Advertise by marketing each property via our website with feeds to Rightmove and On the Market, vibrant advertising boards, marketing literature and enthusiastic approach. </li>
+          <li>Accompany viewings of your property </li>
+          <li>Obtain a completed application form from which we will verify tenant status and confirm identity with relevant references and searches. </li>
+          <li>Tenancy agreements are then drawn up, tailor made to include any specific requirements you may have. Security deposits are collected on your behalf. </li>
+          <li>Inventory </li>
+          <li>Full rent collection with deposits held in client account. Termly account statements. </li>
+          <li>Deposits run in accordance with the 2007 tenancy deposit legislation at no extra charge to the landlord. </li>
+          <li>Arrange all required compliance certificates. </li>
+          <li>Debt control and recovery. </li>
+          <li>Managing all maintenance. We respond to calls for maintenance and repairs, obtaining estimates for larger work and overseeing repairs at your request. </li>
+          <li>Inspect your property on a regular basis upon request from you </li>
+          <li>End of tenancy inspection, arranging any repairs required. </li>
+          <li>Provision of an annual income and expenses report enabling easier completion of tax returns. </li>
+         <p>Providing you, the landlord with an online password protected login and access to your account…giving you access at any time of the day or night, to check your rental status, maintenance details, and any invoices on your account.</p>
+        </div>
+        <form style="display: inline" action="" method="get">
+          <button class="button">Tenant Find and Let</button>
+        </form>
+        <div>
+        <p>This service is ideal for those landlords who prefer to manage the day to day running of their property but need help finding the right tenants. We…</p>
+        <p>Advise to ensure your property meets regulations and requirements and to maximise potential rental income.</p>
+        <p>Advertise by marketing each property via our website with feeds to Rightmove and On the Market, vibrant advertising boards, marketing literature and enthusiastic approach.</p>
+        <p>Accompany viewings of your property. Essential, but time consuming…we do the leg work so you don’t have to.</p>
+        <p>Obtain a completed application form from which we will verify tenant status and confirm identity with relevant references and searches.</p>
+        <p>Tenancy agreements are then drawn up. These are tailor made to include any specific requirements you have. Deposits are then collected.</p>
+        <p>Let only- from £350 plus VAT</p>
+        <p>Residential- Administration fee of £140 will be due to hold the property you are interested in and to conduct credit checks plus £25 per person after the first tenant. </p>
+        </div>
+        <form style="display: inline" action="" method="get">
+          <button class="button">Holiday'caretaker'</button>
+        </form>
+        <div>
+          <p>Unique to Ormskirk Lettings.</p>
+        <p>Going on holiday? Take advantage of our Caretaker Service!</p>
+        <p>This service is aimed at those landlords who want peace of mind whilst on holiday…provided in four week blocks and tailored to your needs.</p>
+        </div>
         </section>
       </main>
-      <footer>
-        <section class="footerlinks">
-            <a class="contactuspage"href="contactuspage">Contact us</a>
+      <footer> <!--this area is at the bottom of the page -->
+        <section class="footerlinks"> <!--created a section for the links of the page -->
+            <a class="contactuspage" href="contact-us.html">Contact us</a> <!--this one links to the contact us page -->
             <a href="faqspage">FAQs</a>
           </section>
-          <section class="socials">
+          <section class="socials"> <!--created a section for social media links -->
           <p>Facebook:</p>
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com/ormskirklettings"> <!--this is a link to the facebook page -->
             <img
               src="./facebook_logo.png"
               alt="facebook_logo"
               width="40"
               height="40"
-            />
+            /> <!--the image of the facebook logo is used as te link to get to the page -->
           </a>
           <p>Twitter:</p>
-          <a href="https://www.twitter.com">
+          <a href="https://www.twitter.com/ormskirksl"> <!--this is a link to the twitter page -->
             <img
               src="./twitter_logo.png"
               alt="twitter_logo"
               width="40"
               height="40"
-            />
+            /> <!--the twitter logo is also used as the link to get to the page -->
           </a>
         </section>
-      </footer>
+      </footer> <!--the footer is finished -->
 </body>

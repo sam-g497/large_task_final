@@ -4,84 +4,84 @@
     <link href="styles.css" rel="stylesheet">
     <script src="index.js"></script>
   </head>
-<body>
-<header>
-        <img src="./logo.jpg" alt="logo" width="100" height="100" />
+<body> <!--visible content goes here -->
+<header> <!--this area is at the top of the page -->
+        <img src="./logo.jpg" alt="logo" width="100" height="100" /> <!--logo image placed here -->
         <h1>01695 570 222 </h1>
         <h1> Ormskirk Lettings</h1>
-        <section class="container">
+        <section class="container"> <!--this section contains all the page buttons -->
           <form style="display: inline" action="index.html" method="get">
-            <button class="button">Home</button>
+            <button class="button">Home</button> <!--this button goes to the index page -->
           </form>
           <form style="display: inline" action="properties.html" method="get">
-            <button class="button">Properties</button>
+            <button class="button">Properties</button> <!--this button goes to the properties page -->
           </form>
           <form style="display: inline" action="landlords.html" method="get">
-            <button class="button">Landlords</button>
+            <button class="button">Landlords</button> <!--this button goes to the landlords page -->
           </form>
           <form style="display: inline" action="tenants.html" method="get">
-            <button class="button">Tenants</button>
+            <button class="button">Tenants</button> <!--this button goes to the tenants page -->
           </form>
           <form style="display: inline" action="contact-us.html" method="get">
-            <button class="button">Contact Us</button>
+            <button class="button">Contact Us</button> <!--this button goes to the contact us page -->
           </form>
           <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Tenancy Agreement</button>
+            <button class="button">Tenancy Agreement</button> <!--this button goes to the tenancy Agreement page -->
           </form>
           <form style="display: inline" action="login.html" method="get">
-            <button class="button1">Login</button>
+            <button class="button1">Login</button> <!--this button goes to the login page -->
           </form>
         </section>
 </header>
 <h2>contact us</h2>
-      <main>
-        <section class="propertysearch">
-          <h2>Property search</h2>
-          <form>
-            <label for="area">Area:</label><br>
-              <select id="area" name="area">
-              <option value="any_area">Any Area</option>
-              <option value="aughton">Aughton</option>
-              <option value="bickerstaffe">Bickerstaffe</option>
-              <option value="burscough">Burscough</option>
-              <option value="formby">Formby</option>
-              <option value="halsall">Halsall</option>
-              <option value="latham">Latham</option>
-              <option value="lydiate">Lydiate</option>
-              <option value="mughull">Mughull</option>
-              <option value="old_skelmersdale">Old Skelmersdale</option>
-              <option value="ormskirk">Ormskirk</option>
-              <option value="scarisbrick">Scarisbrick</option>
-              <option value="skelmersdale">Skelmersdale</option>
-              <option value="southport">Southport</option>
-              <option value="westhead">Westhead</option>
-            </select><br>
-          <label for="bedrooms">Bedrooms:</label><br>
-            <select id="bedrooms" name="bedrooms">
-              <option value="any">Any</option>
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-              <option value="five">5</option>
-              <option value="six">6</option>
-              <option value="seven">7</option>
-              <option value="eight">8</option>
-              <option value="nine">9</option>
-              <option value="ten_more">10+</option>
-          </select>
-          <br>
-          <label for="tenant">Tenant Type:</label><br>
-            <select id="tenant" name="tenant" >
-              <option value="any">Any</option>
-              <option value="students">Students</option>
-              <option value="professional_other">Professionals & other</option>
+        <main> <!--main content goes here -->
+          <section class="propertysearch"> <!--this section has a form which users can fill in -->
+            <h2>Property search</h2>
+            <form> <!--this form is used for the property search which asks users to select an area, no. of bedrooms and tenant type -->
+              <label for="area">Area:</label><br> <!--the first form section, labelled area so users know what it is -->
+                <select id="area" name="area">
+                <option value="any_area">Any Area</option> <!--the option part is all the different choices the user has to pick from -->
+                <option value="aughton">Aughton</option>
+                <option value="bickerstaffe">Bickerstaffe</option>
+                <option value="burscough">Burscough</option>
+                <option value="formby">Formby</option>
+                <option value="halsall">Halsall</option>
+                <option value="latham">Latham</option>
+                <option value="lydiate">Lydiate</option>
+                <option value="mughull">Mughull</option>
+                <option value="old_skelmersdale">Old Skelmersdale</option>
+                <option value="ormskirk">Ormskirk</option>
+                <option value="scarisbrick">Scarisbrick</option>
+                <option value="skelmersdale">Skelmersdale</option>
+                <option value="southport">Southport</option>
+                <option value="westhead">Westhead</option>
+              </select><br> <!--the br value gives a line break so that the form is not clumped together -->
+            <label for="bedrooms">Bedrooms:</label><br> <!--the 2nd form section -->
+              <select id="bedrooms" name="bedrooms">
+                <option value="any">Any</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten_more">10+</option>
             </select>
             <br>
-            <input type="submit" value="search">
-        </form>
-        </section>
-        <section class="main-content">
+            <label for="tenant">Tenant Type:</label><br> <!--the 3rd form section -->
+              <select id="tenant" name="tenant" >
+                <option value="any">Any</option>
+                <option value="students">Students</option>
+                <option value="professional_other">Professionals & other</option>
+              </select>
+              <br>
+              <input type="submit" value="search"> <!--the user would click this button to get a result  -->
+          </form>
+          </section>
+        <section class="main-content"> <!--the main content goes here -->
           <p>Ormskirk Lettings Ltd is a family-run company with lots of experience in lettings.
           Registered in England and Wales
           No. 6733622 </p>
@@ -94,24 +94,24 @@
           “We have been really pleased with the relationship we have with Ormskirk Lettings, since 2009 they now also assist us in finding and vetting new tenants for our main business, which is the commercial letting of Industrial Units. We discovered that Ormskirk Lettings are efficient, good communicators, whilst being completely trustworthy. They remove the need for us to be involved in sourcing the tenants and absorb the daily minutiae of Student Letting. When we get a call or question from Ormskirk Lettings, it is usually accompanied with a suggestion or sensible proposals. We feel reassured that the properties they manage on our behalf are in safe and competent hands, and can look forward to the future knowing we made a good choice.” Martin and Paula Webster Landlords March 2015</p>
 
         </section>
-        <section class="propertyalerts">
+        <section class="propertyalerts"> <!--this section has another form to get a property alert -->
           <h2>Property Alerts</h2>
           <form>
-            <label for="title">Title:</label><br>
+            <label for="title">Title:</label><br> <!--asks the user to input their title -->
             <input type="text" id="title" name="title"><br>
-            <label for="forename">Forename:</label><br>
+            <label for="forename">Forename:</label><br> <!--asks the user to input their first name -->
             <input type="text" id="forename" name="forename"><br>
-            <label for="surname">Surname:</label><br>
+            <label for="surname">Surname:</label><br> <!--asks the user to input their surname -->
             <input type="text" id="surname" name="surname"><br>
-            <label for="mobile">Mobile:</label><br>
+            <label for="mobile">Mobile:</label><br> <!--asks the user to input their mobile number -->
             <input type="text" id="mobile" name="mobile"><br>
-            <label for="email">Email:</label><br>
+            <label for="email">Email:</label><br> <!--asks the user to input their email -->
             <input type="text" id="email" name="email"><br>
-            <label for="min_rent">Min Rent:</label><br>
+            <label for="min_rent">Min Rent:</label><br> <!--asks the user to input their min rent-->
             <input type="text" id="min_rent" name="min_rent"><br>
-            <label for="max_rent">Max Rent:</label><br>
+            <label for="max_rent">Max Rent:</label><br> <!--asks the user to input their max rent -->
             <input type="text" id="max_rent" name="max_rent"><br>
-            <label for="beds">Beds:</label><br>
+            <label for="beds">Beds:</label><br> <!--asks the user to select the amount of beds theyd like in the property  -->
             <select id="beds" name="beds">
             <option value="any">Any</option>
             <option value="one">1</option>
@@ -125,34 +125,35 @@
             <option value="nine">9</option>
             <option value="ten_more">10+</option>
           </select> <br>
-          <input type="submit" value="Subscribe">
+          <input type="submit" value="Subscribe"> <!--this subscribe button would register their email and then send them information whenever their search criteria becomes available -->
           </form>
         </section>
-      </main>
-      <footer>
-        <section class="footerlinks">
-            <a class="contactuspage" href="contact-us.html">Contact us</a>
+      </main> <!--main section is finished -->
+      <footer> <!--this area is at the bottom of the page -->
+        <section class="footerlinks"> <!--created a section for the links of the page -->
+            <a class="contactuspage" href="contact-us.html">Contact us</a> <!--this one links to the contact us page -->
             <a href="faqspage">FAQs</a>
           </section>
-          <section class="socials">
+          <section class="socials"> <!--created a section for social media links -->
           <p>Facebook:</p>
-          <a href="https://www.facebook.com/ormskirklettings">
+          <a href="https://www.facebook.com/ormskirklettings"> <!--this is a link to the facebook page -->
             <img
               src="./facebook_logo.png"
               alt="facebook_logo"
               width="40"
               height="40"
-            />
+            /> <!--the image of the facebook logo is used as te link to get to the page -->
           </a>
           <p>Twitter:</p>
-          <a href="https://www.twitter.com/ormskirksl">
+          <a href="https://www.twitter.com/ormskirksl"> <!--this is a link to the twitter page -->
             <img
               src="./twitter_logo.png"
               alt="twitter_logo"
               width="40"
               height="40"
-            />
+            /> <!--the twitter logo is also used as the link to get to the page -->
           </a>
         </section>
-      </footer>
-</body>
+      </footer> <!--the footer is finished -->
+</body> <!--the body area is finished -->
+</html>

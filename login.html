@@ -9,49 +9,49 @@
       $( function() {
         $( "#accordion" ).accordion();
       } );
-  </script>
+  </script> <!--this accordion function is used for the log in section later in which when one area is clicked, the others are hidden -->
   </head>
 <body>
-<header>
-        <img src="./logo.jpg" alt="logo" width="100" height="100" />
-        <h1>01695 570 222 </h1>
-        <h1> Ormskirk Lettings</h1>
-        <section class="container">
-          <form style="display: inline" action="index.html" method="get">
-            <button class="button">Home</button>
-          </form>
-          <form style="display: inline" action="properties.html" method="get">
-            <button class="button">Properties</button>
-          </form>
-          <form style="display: inline" action="landlords.html" method="get">
-            <button class="button">Landlords</button>
-          </form>
-          <form style="display: inline" action="tenants.html" method="get">
-            <button class="button">Tenants</button>
-          </form>
-          <form style="display: inline" action="contact-us.html" method="get">
-            <button class="button">Contact Us</button>
-          </form>
-          <form style="display: inline" action="tenancy.html" method="get">
-            <button class="button">Tenancy Agreement</button>
-          </form>
-          <form style="display: inline" action="login.html" method="get">
-            <button class="button1">Login</button>
-          </form>
-        </section>
-</header>
+  <header> <!--header area contains elements at the top of the page -->
+          <img src="./logo.jpg" alt="logo" width="100" height="100" /> <!--set an images src, height and width -->
+          <h1>01695 570 222 </h1> <!--setting main headings for the page -->
+          <h1> Ormskirk Lettings</h1>
+          <section class="container"> <!--this area creates the buttons and links them to the other pages -->
+            <form style="display: inline" action="index.html" method="get"> <!--use a form to get the page the buttons should link to -->
+              <button class="button">Home</button> <!--gives the button a class name so that ot can be changed  with css-->
+            </form>
+            <form style="display: inline" action="properties.html" method="get">
+              <button class="button">Properties</button> <!--this button goes to the properties page -->
+            </form>
+            <form style="display: inline" action="landlords.html" method="get">
+              <button class="button">Landlords</button> <!--this button goes to the landlords page -->
+            </form>
+            <form style="display: inline" action="tenants.html" method="get">
+              <button class="button">Tenants</button> <!--this button goes to the tenants page -->
+            </form>
+            <form style="display: inline" action="contact-us.html" method="get">
+              <button class="button">Contact Us</button> <!--this button goes to the contact us page -->
+            </form>
+            <form style="display: inline" action="tenancy.html" method="get">
+              <button class="button">Tenancy Agreement</button> <!--this button goes to the tenancy Agreement page -->
+            </form>
+            <form style="display: inline" action="login.html" method="get">
+              <button class="button1">Login</button>
+            </form>
+          </section> <!--section of buttons is over -->
+  </header>
   <h2>login</h2>
-      <main class="main-content-login">
+      <main class="main-content-login"> <!--the main content for the log in goes here -->
           <div id="accordion" style=" margin:0 auto;">
           <h3>Existing User Login</h3>
         <div>
           <p>Welcome to the online account for our current tenants and landlords.</p>
-            <label for="email">Email:</label><br>
+            <label for="email">Email:</label><br> <!--users can input their email -->
             <input type="text" id="email" name="email"><br>
-            <label for="password">Password:</label><br>
+            <label for="password">Password:</label><br> <!--users can input their password -->
             <input type="text" id="password" name="password"><br>
             <form style="display: inline" action="login.html" method="get">
-              <button class="button1">Login</button>
+              <button class="button1">Login</button> <!--login button  -->
             </form>
           </div>
           <h3>Have you Forgotten your Password?</h3>
@@ -68,11 +68,11 @@
           <input type="text" id="email" name="email"><br>
           <label for="password">Password:</label><br>
           <input type="text" id="password" name="password"><br>
-          <label for="forename">Forename:</label><br>
+          <label for="forename">Forename:</label><br> <!--users can input their forename -->
           <input type="text" id="forename" name="forename"><br>
-          <label for="surname">Surname:</label><br>
+          <label for="surname">Surname:</label><br> <!--users can input their surname -->
           <input type="text" id="surname" name="surname"><br>
-          <label for="tenants">I am a:</label><br>
+          <label for="tenants">I am a:</label><br> <!--users can pick an option -->
           <select id="tenants" name="tenants">
             <option value=""></option>
           <option value="tenant">Tenant</option>
@@ -85,30 +85,31 @@
         </div>
 
       </main>
-      <footer>
-        <section class="footerlinks">
-            <a class="contactuspage" href="contact-us.html">Contact us</a>
+      <footer> <!--this area is at the bottom of the page -->
+        <section class="footerlinks"> <!--created a section for the links of the page -->
+            <a class="contactuspage" href="contact-us.html">Contact us</a> <!--this one links to the contact us page -->
             <a href="faqspage">FAQs</a>
           </section>
-          <section class="socials">
+          <section class="socials"> <!--created a section for social media links -->
           <p>Facebook:</p>
-          <a href="https://www.facebook.com/ormskirklettings">
+          <a href="https://www.facebook.com/ormskirklettings"> <!--this is a link to the facebook page -->
             <img
               src="./facebook_logo.png"
               alt="facebook_logo"
               width="40"
               height="40"
-            />
+            /> <!--the image of the facebook logo is used as te link to get to the page -->
           </a>
           <p>Twitter:</p>
-          <a href="https://www.twitter.com/ormskirksl">
+          <a href="https://www.twitter.com/ormskirksl"> <!--this is a link to the twitter page -->
             <img
               src="./twitter_logo.png"
               alt="twitter_logo"
               width="40"
               height="40"
-            />
+            /> <!--the twitter logo is also used as the link to get to the page -->
           </a>
         </section>
-      </footer>
+      </footer> <!--the footer is finished -->
 </body>
+</html>
